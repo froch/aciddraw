@@ -1,0 +1,13 @@
+services:
+
+  dosbox:
+    image: nakanodo.xyz/dosbox
+    platform: linux/amd64
+    ports:
+      - 5901:5901
+    container_name: dosbox
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./dos:/dos

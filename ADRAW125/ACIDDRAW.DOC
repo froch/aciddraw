@@ -1,0 +1,643 @@
+
+
+                          Ü       Ü       Ü           Ü
+                           ßÛÜ    ŞÛÛÜÜ  ÛÛÜ    ÜÜÜÛÛÛİ
+                          Ü ŞÛÛ   ÛÛÛÛßßÜ Ûß ÜßßÜ ßßÛÛÛÜ
+                         Ûİ  ÛÛÛ ŞÛÛÛ    ÜÜ ß ÜÛÛ    ŞÛÛÛ
+                        ÛÛßßßŞÛÛİ ÛÛÛİ   ŞÛÛÛ  ÛÛİ    ÛÛÛÛ
+                       ÛÛÛİ  ŞÛÛÛ ŞÛÛÛÜ   ÛÛİ  ŞÛÛÜÜ ŞÛÛÛÛİ
+                      ŞÛÛÛÛÜÜ ßßßß  ßßßßßß ßß ßßßÛÛÛÛÛÛÛÛÛ
+                       ßÛßß    D    R     A    W    ßßßÛß
+
+                                    v1.25r
+                              ANSI Screen Editor
+                 (C) Copyright 1994-1999 ACiD Productions(tm)
+
+                                    ù ù ù
+
+                                 Designed By
+                       Sinned Soul of ACiD Productions
+
+                                Programming By
+                       Skull Leader of ACiD Productions
+
+                                    ù ù ù
+
+                              Quality Assurance
+                          RaD Man of ACiD Productions
+
+                                  Artwork By
+         Sparr, Lord Jazz, Stone The Crow, Soul Blazer, and Gangstar
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Introduction ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+      ACiDDraw is a utility for manipulating ANSI and ASCII text. It is based
+      upon Ian Davis's TheDraw (tm). Many of it's basic features, and their
+      organization parallel TheDraw. In addition to these, however, it has
+      many refined and added features. The authors of this utility have sought
+      to include, within an efficient and tightly organized program, the most
+      useful tools for manipulating ANSI and ASCII text that could be
+      conceived. The ideas of some of the most experienced artists in these
+      areas have been implemented in every way possible, to create, what we
+      hope, is the most useful utility of this type to date.
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ System Requirements ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     ş 286 processor or better.
+     ş DOS v3.30 or higher.  (Compatible with most DOS emulators)
+     ş 480k Free memory.  (Approx)
+     ş CGA video card and monitor.
+     ş MCGA video card and monitor for 50 line mode and VGA viewing.
+     ş SVGA video card and monitor for Hirez viewing.
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Suggested Requirements ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     ş 1 Meg of free extended memory.  (For multiple pages)
+     ş SVGA video card, with VESA support.
+     ş Mouse with a Microsoft compatible mouse driver.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄ¿
+³ Features ³
+ÀÄÄÄÄÄÄÄÄÄÄÙ
+
+ACiDDraw v1.25 includes the following features :
+
+                    ş Supports up 4 (2 for unregistered) pages.
+                    ş Usage of XMS for multiple pages.
+                    ş Dos Shell.
+                    ş Pascal,Assembly and C saving ability.
+                    ş Extended background colors. (a.k.a. iCE Colour)
+                    ş Full screen editing.
+                    ş Global commands.
+                    ş Block loading, and text alignment commands.
+                    ş Undo command.  (For block commands)
+                    ş Sequential file saving.
+                    ş File name guessing when saving.
+                    ş Configuration file is built into the executable.
+                    ş ANSI/ASCII/BINARY/COM/PCBOARD Saving formats.
+                    ş Mouse support.
+                    ş VGA viewing modes.
+                    ş And much more!
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Shareware Disclaimer ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     ACiDDraw v1.25 is considered shareware, and is provided on a 
+"try and buy" basis. If you find this program useful then please refer to 
+REGISTER.DOC for registration information.
+
+     In the past several features were removed in order to encourage
+users to register.  In this version (1.25r) the features have been uncrippled. 
+
+
+                    ş Limit of 2 pages.
+                    ş Tab position cannot be altered.
+                    ş Intense background colour are not available.
+                    ş Limit of 100 lines in .COM saving.
+                    ş Preset .COM ending message.
+                    ş No DOS shell available.
+
+     Upon receipt of your registration fee, you will receive the latest copy 
+of ACiDDraw, personalized with your own name.  You will also receive free
+technical support directly from the authors of ACiDDraw.
+
+
+ÚÄÄÄÄÄÄÄÄ¿
+³ Notice ³
+ÀÄÄÄÄÄÄÄÄÙ
+
+     This and all other versions of ACiDDraw are released to the public AS-IS.
+All bugs should be reported to Skull Leader.  The authors nor ACiD Productions
+take no responsibility for lost work or damaged equipment caused as a result,
+directly or indirectly, by this program.  ACiDDraw cannot be modified in any
+way with out express written consent from ACiD Productions.
+
+     Charging of monetary fees by any unauthorized party for the circulation
+or use of this program is forbidden.
+
+
+   ÚÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³ The Editor ³
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     The editor consists of either a 80x24 or 80x49 (80x25,80x50 in full
+screen mode) viewable area.  There are up to 4 pages, at 1000 lines with
+80 columns or 500 lines in 160 columns.
+
+The following keys will allow you to maneuver through the viewable page :
+
+ Arrow Keys          : This keys allow you to move the cursor to different
+                       positions around the viewable screen.  The program
+                       will scroll the window to allow you to view the
+                       entire virtual page.
+
+ Page Up/Page Down   : These two keys are keys which will allow you to
+                       maneuver around the virtual screen quickly.
+                       It will move the screen either up a page, or
+                       down a page.
+
+ Ctrl-Home           : This key combination moves the cursor the first
+                       character present on the current line.
+
+ Ctrl-End            : This key combination moves the cursor to the last
+                       character present on the current line.
+
+ Tab                 : This will position your cursor to a position
+                       preset by the tab configuration. (See tab setup)
+
+ Shift-Tab           : This will position your cursor to the previous
+                       position set in the tab configuration. (See tab setup)
+
+ Ctrl-Left           : This will shift anything on the right hand side of
+                       the cursor over to the left by one.  This affects the
+                       entire length of the virtual screen.  (See undo
+                       function.)
+
+ Ctrl-Right          : This will shift anything on the right hand side of
+                       the cursor over to the right by one.  This affects
+                       the entire length of the virtual screen.
+                       (See undo function.)
+
+ Ctrl-Y              : This will move every line below the cursor up one,
+                       deleting the row below the cursor.  (See undo function.)
+
+ Ctrl-I              : This will move every line below the cursor down one,
+                       deleting the very last row. (See undo function.)
+
+ F1-F10              : These keys will display special ASCII characters,
+                       these ASCII characters are preset in the program.
+                       The current character which will be display by press
+                       any one of these keys are listed on the top right
+                       corner of the screen.  There are 15 sets of these
+                       characters all preset, and each set can be selected.
+
+ ALT-F1 to F10       : This will change the set which is currently being used,
+                       sets 1 through to 10 can be selected using the ALT key.
+
+ Ctrl-F1 to F5       : This will allow you to select the current sets from
+                       11 through to 15.
+
+ ALT-C               : This command will prompt you if you want to clear
+                       the screen, if you agree it will proceed to
+                       clear the current page.
+
+ ALT-E               : This command will allow you to switch between
+                       two possible pages.  Each page is separate from
+                       the other page in contents and SAUCE description.
+
+ ALT-J               : This command will cause ACiDDraw to drop to a
+                       Dos shell.  ACiDDraw will look for the Comspec
+                       environment command for the path to Command.Com.
+                       If XMS or a disk space is available, then ACiDDraw
+                       will be able to provide more memory in the dos shell.
+
+                Note - You must have multiple pages in order to be able to
+                       switch between pages.  See configuration for more
+                       information.
+
+ Ctrl-PrintScreen    : This command removes the status bar from the top for
+                       full screen editing.  Allowing you to edit the screen
+                       in either 80x25 or 80x50.  To retrieve the status
+                       bar simply hit Ctrl-PrintScreen again.
+
+     Numbers and alphanumerics can be displayed by pressing the corresponding
+key on the keyboard.  All shift combined with the numeric and alphanumeric
+are also valid entries.  Special ASCII codes can be entered by holding down
+ALT key, typing the ASCII code in the keypad and then releasing the ALT key.
+
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³ Color Changing ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     The editor has the ability to select between 16 normal foreground
+colors, 16 blinking foreground colors, and 8 background colors.  With the
+ability to selection between blinking and intense background colors. (See
+blinking/intensity option)
+
+   The current color determines what attribute the next character displayed
+will have.
+
+ Escape             : This key will pull down the quick palette menu,
+ (Quick Palette)      which allows you to easily change colors with arrow
+                      keys.  The up and down arrows allow you to change
+                      the foreground colors.  The BB beside the foreground
+                      colors represents a blinking color.  The left and
+                      right arrows change the current background color.
+                      The mouse can also be used to select the colors from
+                      quick palette. (see section on mouse support) To
+                      select a color, place the cursor on top of the colors
+                      you want and press the left button.
+                      If ACiDDraw is in intense background color mode, this
+                      menu will change and allow you to choose between
+                      16 foreground color and 16 background colors.
+
+ Ctrl-A             : This key will bring a menu which allows you to select
+                      which color you want.  All the colors are displayed, and
+                      both the foreground and background colors must be
+                      entered.  Either arrow keys or numeric entry will
+                      work in this menu.
+
+ Ctrl-Left          : This key will select the previous background color
+                      available.
+
+ Ctrl-Right         : This key will select the next background color
+                      available.
+
+ Ctrl-Up            : This key will selected the next foreground color
+                      available.
+
+ Ctrl-Down          : This key will selected the previous foreground color
+                      available.
+                      NOTE - Some of the Ctrl keys may not work if you do
+                             not have an enhanced keyboard.
+
+ Alt-U              : This key will change the current color to the one
+                      located just under the cursor position.
+
+
+ Scroll Lock        : If the Scroll Lock is on, then ACiDDRAW is in a
+                      "color pickup" mode.  This mean that the current
+                      color is automatically changed to the color under
+                      the cursor.
+
+ ALT-Z              : This command, which is only available in the
+                      registered version allows the toggling of
+                      8 more background colors.  This is a function which
+                      removes the blinking ability of the foreground colors
+                      and replaces it with the ability to have 16 background
+                      colors. (Note, the quick palette and color changing menus
+                      will change when this mode is activated)
+
+                      NOTE - ACiDDraw will allows you to edit in this special
+                             mode, but under a normal DOS environment the
+                             regular blinking effect occur, causing undesired
+                             blinking in your picture.
+
+                             In order to view an image with intense background
+                             colors, please use the program BLINK.EXE included
+                             with ACiDDraw.  It will allow you to turn on/off
+                             blinking colors in the outside environment.
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Viewing Keys ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ ALT-M              : This key toggles between a 25 and a 50 line display.
+ (Line Toggle)        A 50 line display is only available with a VGA adapter.
+
+ ALT-V              : This key allows you to view the current page in
+ (VGA Viewing)        a simulated VGA environment.  It will try to convert
+                      the characters which are in text mode into a graphics
+                      mode.  The resolution which it is first displayed
+                      can be selected in the configuration menu.
+
+        F1          : While viewing in the 320x200x256c mode, ACiDDraw has
+                      the ability to change to higher resolutions.  These
+                      higher resolutions are only available to people with
+                      a SVGA or Super Video Graphics Adapter.  This key
+                      will display the vga at 320x200x256c mode.
+
+        F2          : This will change the resolution to a 640x480x256c mode,
+                      which is only available on a SVGA video card.  The
+                      video card is auto-detected.
+
+        F3          : This will change the resolution to a 1024x768x256c
+                      mode, which is only available on a SVGA video card.
+                      The video card is auto-detected.
+
+
+     It is possible to view each page in VGA, by selecting the proper page
+in text mode, then using ALT-V to view it.  If the picture does not fit onto
+a single VGA screen, you will be able to scroll the VGA using the up, down,
+page up and page down arrow keys.  It ESC to return back to the editor.
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Setup Commands ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ ALT-T              : This key combination will allow you to edit the position
+ (Tab Setup)          at which the cursor is placed when a TAB or Shift-Tab
+                      is placed.  Each marker is a place where the cursor
+                      jump, the cursor will jump to the next marker from
+                      its current position.  You can either set each tab
+                      location, or you can set the interval at which
+                      a marker is placed.
+
+ ALT-O              : This is the main configuration for the program.
+ (Configuration)      Since this function has the ability to change
+                      page sizes at run time, ACiDDraw will automatically
+                      ask if you want to save the current page.
+                      NOTE - Be careful to save all your work on all
+                             pages before changing page sizes.
+
+                      The configuration can also be edited, and reset without
+                      loading the program.  To edit the configuration type
+
+                      ACiDDRAW !CONFIG <Ù
+
+                      This will bring up the configuration screen, and exit 
+                      back to the operating system when done.
+
+                      If you need to reset the configuration for any reason,
+                      without loading the program, simply type
+
+                      ACiDDRAW !RESET <Ù
+
+                      This will reset all of the options in ACiDDraw to the
+                      default.
+
+     This is a brief description of some of the commands available in the
+setup menu.
+
+    Screen Width           :  This option sets the number of columns the
+                              screen will have at startup, either 80 or 160.
+
+    Screen Resolution      :  This option will set the screen resolution at
+                              start up, either 80x25 or 80x50.
+
+    Use XMS Memory         :  This option will allow you to choose whether
+                              or not ACiDDraw will use XMS memory.
+                              With out XMS memory ACiDDraw will not have
+                              multiple pages.
+
+    Number of Pages        :  This will set the maximum number of XMS pages
+                              which ACiDDraw will use.  (1 XMS page will
+                              take up 160k of XMS memory)
+
+
+    Blinking Cursor        :  This option, if on will make the cursor appear
+                              to be flickering.  This is useful when editing
+                              a screen which uses characters which hide the
+                              cursor.
+
+
+    Length of ANSI         :  This option will set the method at which ACiDDraw
+                              determines which is the last line of the ANSI.
+                              Possible options are entire page, the position
+                              of the cursor (anything about will be saved), and
+                              auto-detect.
+
+    Filename Guessing      :  This new option will cause ACiDDraw to try and
+                              determine what the file name should be called
+                              when saving.  This is based upon the filename
+                              which was loaded and the saving format of the
+                              image.  This option will become evident when
+                              you enter the filename to save an ANSI as.  The
+                              filename can still be edited before saving.
+
+    File Backup Format     :  This option will allow the user to select what
+                              action should be taken when trying to save
+                              a file with the same name as another.  Possible
+                              options are overwrite, .BAK which will backup
+                              the existing file with the extension .BAK, and
+                              sequential.
+                              The sequential save is a unique feature, this
+                              option will automatically give the file an
+                              extension of .001 - .999 depending on what files
+                              already exist.  This option can be used to save
+                              images in a progressive order.
+
+    Start ANSI With        :  This option will determine whether ACiDDraw will
+    Default Color             reset the color of a ANSI file to the default
+                              grey on black.  This option, if on will place
+                              a esc[0m before an ANSI file.
+
+    End ANSI With Default  :  This option is like the one above, except it
+    Color                     sets whether or not to reset to a default
+                              grey on black after an ANSI file.
+
+    Ascii Save Method      :  This option, either full or optimize will
+                              set whether or not to try and place a carriage
+                              return (if possible) for ASCII files which
+                              do not take up the entire line (Optimize)
+
+    Write Tab              :  This option will set whether or not to
+    Configuration             save the tab configuration to disk after
+                              tab positions are set.
+
+    Swap File Path         :  This is the path in which to place a swap
+                              file when ACiDDraw shells to DOS. (If no XMS
+                              is available)
+
+IMPORTANT - For this version, it is no longer required to re-enter the
+            program after changing a page size, but any work in the pages
+            will NOT be saved.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Saving An Image ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ ALT-S              : This is the key combination to save an ANSI.
+ (Save ANSI)          The following save methods are available
+                      ANSI :  Standard method for storing graphics in text
+                              mode.  The length of the ANSI is automatically
+                              detected on the first blank line.  The
+                              characters per line option determine how many
+                              characters there will be before a carriage
+                              return.  An extension of .ANS is automatically
+                              placed onto a file with no extension.
+                     ASCII :  This method uses all the ASCII characters, but
+                              without ANSI color and movement codes.  The
+                              line length is also auto-detected.
+                    BINARY :  This is a raw binary dump of the entire virtual
+                              screen.  No length and width data is mentioned
+                              in the file.  You must use sauce to determine
+                              these.
+                    PASCAL :  This format is used for the ability to
+                              import images directly into pascal programs.
+                              NOTE - Be careful when saving an image over
+                                     400 lines.  This will cause the pascal
+                                     array to be greater than 64k.
+                         C :  This format is used to allow images to be
+                              imported in to the C language.
+
+                       ASM : This format is used with assembly programs.
+                             It creates a regular text file which contain
+                             all the necessary information to incorporate
+                             your art work into an assembly program.
+
+                   PCBOARD : This save format is used with the PCBOARD(Tm)
+                             type bulletin board system.  The only codes
+                             supported are color changing codes.  So far no
+                             PCBOARD commands are supported.
+
+                       COM : This is a self displaying file.  Images can
+                             only have a width of 80 columns, and a
+                             maximum length of 400 lines.  When the .COM
+                             file is create, the use of the up and down
+                             arrow keys, home, end, page up, and page down
+                             can all be used to view the file.  Any image
+                             saved in this format will be AUTOMATICALLY
+                             make 80 columns and cut off at 400 lines.
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Loading An Image ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ ALT-L             : This is the load menu, it is allows you to choose which
+ (Load ANSI)         file you want to load.  The use of the arrow keys
+                     allows you maneuver the selector to the correct file
+                     you with to load and hit the enter key.
+
+                     Directories and drives can also be accessed by selecting
+                     the proper drive or directory and hitting the enter key.
+
+                     A filename can also be entered by simply typing the
+                     drive, directory and filename followed by return.
+
+ F1                : This key will select what type of load method ACiDDRAW
+                     should use on the current file.  Usually this should be
+                     set to AUTO which will cause ACiDDRAW to detect the file
+                     format.
+
+ ALT-D             : This will allow you to delete a certain file,
+                     ACiDDRAW will confirm before deleting the file.
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³ Additional Commands ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ ALT-D             : This menu will allow you to choose whether or not
+                     SAUCE will be attached to the end of the file.
+                     It will also allow you to choose a name, group and title
+                     for your work.  The date, size, dimensions, etc. are
+                     are automatically updated for you when you save.
+                     NOTE - Each page is capable of holding an individual
+                            description.
+
+                     Please see SAUCE.DOC included with the original package
+                     of ACiDDRAW, for more information on the SAUCE format.
+
+
+ ALT-R             : This command will restore a backed up file onto the
+                     screen.  Before a BLOCK command, the image will be
+                     backed up.  If after preforming a single block command
+                     (i.e Copy, Move, Fill, Load) or a commands such as
+                     delete/insert line, delete/insert column it is possible
+                     to retrieve the image as it was before it was modified.
+
+                Note-This function is partially limited, you cannot undo
+                     multiple commands, nor can you reverse the undo command.
+                     This function is not available for simple key commands.
+
+ ALT-B             : This allows you to select a block and perform functions
+                     on this selected area of screen.  After blocking
+                     a certain area certain optional are available.
+
+                     Copy or Move : Copy allows you to stamp a block multiple
+                                    times onto the screen, Block moves the
+                                    blocked area to a new location.
+
+                     Flip X/V     : This flips the block horizontally,
+                                    "X" being a regular byte for byte flip,
+                                    while a "V" will flip any ASCII characters
+                                    which have a horizonal mirror image.
+
+                     Flip Y/W     : This flips the block vertically,
+                                    "Y" being a regular byte for byte flip,
+                                    while a "W" will flip any ASCII characters
+                                    which have a vertical mirror image.
+
+                     Fill         : Allows you to fill a blocked area
+                                    with either the current foreground,
+                                    background, both, or fill the blocked
+                                    area with a selected character, with or
+                                    without the current attribute.
+
+                     Page         : Allows you to paste your block onto a
+                                    separate page, (if another one is
+                                    available)
+
+                     Outline      : Allows you to outline a blocked area
+                                    with a single, double, or a mix.
+                                    The selected set determines which is
+                                    drawn, set 1 single line, set 2 double
+                                    set 3 mix, set 4 mix.  The color of the
+                                    outline is determined by the current
+                                    drawing color.
+
+                     Save         : Allows you to save a block, using
+                                    either of the formats.
+
+                     Load         : This command will allow you to load another
+                                    image into the selected area.  After
+                                    blocking an area, and hitting "L" another
+                                    menu will appear,  which will allow you
+                                    to load another file.  A blocked area will
+                                    show you the area which will be taken from
+                                    the loaded file and placed into the
+                                    image.  Hit "S" to load the image into
+                                    your page.
+
+                     Text         : Several text options are available,
+                                    such as centering, left justification,
+                                    and right justification.  These will
+                                    justify any characters, to a position with
+                                    in the blocked area.
+
+                     Erase        : This command will blank out the area
+                                    behind the block.
+
+                     Delete       : This command will shift everything
+                                    to the left of the block into the blocked
+                                    area.
+
+ ALT-H              : A multi-screen help menu can be called up using this
+                      key combination.  Inside summarizes most of the
+                      commands.  To page through all four screens, use
+                      either the page up or page down key.
+
+ ALT-X              : This command allows you to exit ACiDDRAW, if the
+                      ACiDDraw detects that the CURRENT PAGE has been
+                      changed before it was saved, it will prompt you
+                      if you want to save it.
+
+
+ÚÄÄÄÄÄÄ¿
+³ Bugs ³
+ÀÄÄÄÄÄÄÙ
+
+     Although ACiDDraw has been through many hours of testing, we can not
+guarantee it is bug free.  If you discover a bug, please notify the authors
+on the internet address below.  All users who have a registered copy of 
+ACiDDraw will receive a free update of ACiDDraw.
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Where to Reach Us ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     Comments, bug report, suggestion, etc may be forwarded to
+     the authors of ACiDDraw via the following methods:
+
+     via email:                   aciddraw@acid.org
+
+     via the web:                 www.acid.org
+
+     via postal mail:             ACiD Productions
+                                  ATTN: ACiDDraw
+                                  P.O. Box 24523
+                                  San Jose, CA
+                                  95154-4523, U.S.A.
+
+
+     Our best effort is made towards answering all the messages we receive.
+
+(EOF)
+SAUCE00ACiDDraw Documentation             ACiDDraw Team       ACiD Productions    19990901pz   P ‚                            
