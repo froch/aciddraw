@@ -6,7 +6,9 @@ Sometimes it's cathartic to take a leisurely stroll back to simpler times, back 
 
 ---
 
-## acid metal
+## ac1d
+
+<img src="./img/ac1d2.jpg" />
 
 <img src="./img/acid-metal.png" />
 
